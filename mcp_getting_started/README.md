@@ -4,7 +4,7 @@
 
 ## 功能特点
 
-- 使用 OpenAI 兼容 API 进行语言模型调用
+- 使用 OpenAI 兼容 API 进行语言模型调用(在代码中使用deepseek替代)
 - 通过 MCP 协议与后端服务器通信
 - 支持网络搜索功能
 - 交互式命令行界面
@@ -19,12 +19,6 @@
 ### 安装步骤
 
 1. 克隆此仓库：
-
-```bash
-git clone https://github.com/您的用户名/mcp-getting-started.git
-cd mcp-getting-started
-```
-
 2. 使用 uv 安装依赖：
 
 ```bash
