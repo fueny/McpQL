@@ -1,5 +1,9 @@
 
 # 使用 npx -y @modelcontextprotocol/inspector uv run web_search.py 运行代码
+
+# 此代码存在问题，关于下边zhipu的api key 不可从.env读取会在用行时报错 记录时间2025.4.22，待后续解决
+# 此代码存在问题，关于下边zhipu的api key 不可从.env读取会在用行时报错 记录时间2025.4.22，待后续解决
+# 此代码存在问题，关于下边zhipu的api key 不可从.env读取会在用行时报错 记录时间2025.4.22，待后续解决
 # 此代码存在问题，关于下边zhipu的api key 不可从.env读取会在用行时报错 记录时间2025.4.22，待后续解决
 import httpx
 from mcp.server import FastMCP
@@ -22,7 +26,7 @@ async def web_search(query: str) -> str:
     async with httpx.AsyncClient() as client:
         response = await client.post(
             'https://open.bigmodel.cn/api/paas/v4/tools',
-            headers={'Authorization': '92ca11e676794de485c213c18eab0ea7.fpphoGfEswv9wh9t'},
+            headers={'Authorization': '你的zhipuApi'},
             json={
                 'tool': 'web-search-pro',
                 'messages': [
