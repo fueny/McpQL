@@ -1,0 +1,23 @@
+[project]
+name = "mcp-getting-started"
+version = "0.1.0"
+description = "MCP 网络搜索客户端实现"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "fengyue", email = "git7fueny@gmail.com"}
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "openai>=1.75.0",
+    "python-dotenv>=1.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fueny/mcp-getting-started"
+"Bug Tracker" = "https://github.com/fueny/mcp-getting-started/issues"
+
+[tool.setuptools]
+py-modules = ["McpClient", "web_search", "search_client", "main"]
